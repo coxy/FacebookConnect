@@ -17,13 +17,14 @@
     
     <license>Apache 2.0</license>
     
-    <js-module src="www/pg-plugin-fb-connect.js" name="cdv.fb">
+    <js-module src="www/cdv-plugin-fb-connect.js" name="cdv.fb">
         <merges target="CDV.FB" />
     </js-module>
 
-    <js-module src="www/facebook-connect-debug.js" name="fb">
+    <js-module src="www/facebook-js-sdk.js" name="fb">
         <merges target="FB" />
     </js-module> 
+
     
     <config-file target="config.xml" parent="/*">
       <access origin="https://m.facebook.com" />
