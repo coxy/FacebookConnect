@@ -17,14 +17,8 @@
     
     <license>Apache 2.0</license>
     
-    <js-module src="www/cdv-plugin-fb-connect.js" name="cdv.fb">
-        <merges target="CDV.FB" />
-    </js-module>
-
-    <js-module src="www/facebook-js-sdk.js" name="fb">
-        <merges target="FB" />
-    </js-module> 
-
+    <asset src="www/cdv-plugin-fb-connect.js" target="cdv-plugin-fb-connect.js" />
+    <asset src="www/facebook-js-sdk.js" target="facebook-js-sdk.js" />
     
     <config-file target="config.xml" parent="/*">
       <access origin="https://m.facebook.com" />
@@ -33,10 +27,6 @@
       <access origin="https://*.fbcdn.net" />
       <access origin="https://*.akamaihd.net" />
     </config-file>
-    
-    <preference name="APP_ID" />
-    <preference name="APP_NAME" />
-    <preference name="FACEBOOK_SDK" />
     
     <engines>
       <engine name="cordova" version=">=3.0.0" />
@@ -72,10 +62,6 @@
             </dict>
           </array>
         </config-file>
-
-        
-        <!-- FACEBOOK SDK -->
-        <framework src="$FACEBOOK_SDK" weak="true" />
 
     </platform>
 </plugin>
